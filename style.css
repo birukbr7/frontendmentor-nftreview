@@ -1,0 +1,120 @@
+/*
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White:  */
+body {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: hsl(217, 54%, 11%);
+  margin: 1.5rem;
+  color: hsl(0, 0%, 100%, 40%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.contaner {
+  background-color: hsl(216, 50%, 16%);
+  height: 510px;
+  width: 300px;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.4rem;
+  margin-bottom: 5rem;
+}
+.mainimg {
+  width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 0.5rem;
+}
+.over {
+  position: absolute;
+  width: 268px;
+  height: 268px;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: hsl(178, 100%, 50%, 40%);
+  opacity: 0;
+}
+.over img {
+  position: absolute;
+  top: 42%;
+  right: 40%;
+}
+.over:hover {
+  opacity: 1;
+}
+.contaner article h2 {
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+.contaner article p {
+  margin-top: 1rem;
+}
+li {
+  list-style: none;
+}
+ul {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(0, 0%, 100%, 15%);
+  padding-bottom: 0.8rem;
+}
+ul li {
+  display: flex;
+  align-items: center;
+}
+.ethimg,
+.cimg {
+  padding-right: 0.5rem;
+}
+ul li:first-child {
+  color: hsl(178, 100%, 50%);
+}
+
+.pfp {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 35px;
+  margin-right: 1rem;
+}
+
+.creater {
+  display: flex;
+  align-items: center;
+}
+.contaner p {
+  margin-bottom: 1rem;
+}
+span {
+  color: white;
+}
+span:hover,
+.h2:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
